@@ -1,4 +1,4 @@
-# IF2250-2021-K04-04-Planties
+Planties
 > Here goes your awesome project description!
 
 ## Table of contents
@@ -33,37 +33,21 @@ Jalankan program dengan mengubah current directory ke src lalu membuka main.py: 
 ## Modul
 Berdasarkan use-case yang dikerjakan:
 * Modul login
-    Penanggung Jawab : Karina Imani (NIM 13519166)
-    -
     ![login](./img/login.png)
 * Modul register
-    Penanggung Jawab : Karina Imanni (NIM 13519166)
-    -
     ![register](./img/register.png)
 * Modul Keranjang Pembelian
-    Penanggung Jawab : Akifa Nabil Ufairah (NIM 13519179)
-    -
     ![k](./img/keranjang.png)
 * Modul Beli Produk
-    Penanggung Jawab : Akifa Nabil Ufairah (NIM 13519179)
-    -
     ![a](./img/beranda.png)
     ![a](./img/detail_produk)
 * Modul Pencarian Produk
-    Penanggung Jawab : Clarissa Natalia (NIM 13519213)
-    -
     ![a](./img/search.png)
 * Modul Review Produk
-    Penanggung Jawab : Nabilah Erfariani (NIM 13519181)
-    -
     ![-](./img/rating.jpg)
 * Modul Form Pembayaran
-    Penanggung Jawab : Nabilah Erfariani (NIM 13519181)
-    -
     ![a](./img/form_bayar.png)
 * Modul Transaksi
-    Penanggung Jawab : Nabilah Erfariani (NIM 13519181)
-    -
     ![-](./img/transaksi.png)
 
 ## Implementasi Basis Data
