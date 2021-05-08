@@ -1,0 +1,40 @@
+before_script: 
+  - python --version
+  - pip install -r requirements.txt
+
+image: "python:3.7"
+
+variables:
+  MYSQL_DATABASE : planties
+  MYSQL_USER : planties
+  MYSQL_PASSWORD : 12345678
+  MYSQL_HOST : localhost
+  MYSQL_PORT : 3306
+
+stages: 
+  - connect
+  - Test
+
+connect:
+  only: 
+    - master
+  stage : connect
+  image: mysql
+  script:
+    - echo "SELECT 'OK';" | mysql --user="$MYSQL_USER" --password="$MYSQL_PASSWORD" --host="$MYSQL_HOST" --port="$MYSQL_PORT" "$MYSQL_DATABASE"
+
+Test: 
+  only: 
+    - master
+  script: 
+    - pip install pytest
+    - pip install pytest-dependency
+    - pip install mysql-connector-python
+    - cd src
+    - pytest test_cart.py
+    - pytest test_katalog.py
+    - pytest test_bayar.py
+    - pytest test_rating.py
+  stage: Test
+  when:
+      on_success
